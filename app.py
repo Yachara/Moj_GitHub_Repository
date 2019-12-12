@@ -9,5 +9,10 @@ def hello():
 def login():
 	return render_template('login.html')
 
+@app.route("/password_change/")
+def password_change():
+	return render_template('password_change.html')
+
+
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=5000, debug=True)
