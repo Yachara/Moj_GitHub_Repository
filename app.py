@@ -9,5 +9,10 @@ def hello():
 def login():
 	return render_template('login.html')
 
+@app.route("/new_account/")
+def new_account():
+	return render_template('new_account.html')
+
+
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=5000, debug=True)
